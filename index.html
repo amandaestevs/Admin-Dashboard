@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+ <div class="main-container">
+    <div class="sidebar">
+        <div class="myLogo">DashBoard</div>
+        <nav>
+            <ul>
+                <li class="active">Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Community</li>
+            </ul>
+
+            <ul>
+                <li>Setting</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header">
+           <div class="search-bar">
+        <img src="img/magnifying-glass-solid.svg" class="search-pic">
+        <input class="search-input" type="text">
+           </div>
+
+           <div class="side-profile">
+            <img class="notification" src="img/bell-solid.svg" alt="">
+            <img class="profile-pic" src="img/profile-pic.jpg">
+            <h3 class="name">Morgan Oakley</h3>
+           </div>
+
+           <div class="main-profile">
+            <img class="profile-pic" src="img/profile-pic.jpg">
+        <div class="profile-text">
+            <p>Hi there,</p>
+            <h3 class="name">Morgan Oakley</h3>
+        </div>
+           </div>
+
+           <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+           </div>
+    </div>
+
+
+    <div class="main-content">
+        
+        <div class="content-container">
+          <h3 class="project-title">Your Projects</h3>
+          <div class="project">
+            <h4>Impossible Project</h4>
+            <p>Enean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div>
+          <div class="project second-pjc">
+            <h4>Easy Project</h4>
+            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+          </div>
+          <h3 class="annoucement-title">Annoucements</h3>
+          <div class="annoucements">
+            <h4>Updated Privacy Policy</h4>
+            <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p>
+            <h4>Community Share Day</h4>
+            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+          </div>
+          <div class="project">
+            <h4>Money Maker</h4>
+            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                Nam eget dui. Etiam rhoncus.</p>
+          </div>
+          <div class="project">
+            <h4>Ad Blocker</h4>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          </div>
+          <h3 class="trending-title">Trending</h3>
+          <div class="trending">
+            <h4>@Morgan</h4>
+            <p>Impossible Project</p>
+            <h4>@alex</h4>
+            <p>World Peace Builder</p>
+            <h4>@kim</h4>
+            <p>Life Changing App</p>
+            <h4>@Jake</h4>
+            <p>Super cool app</p>
+          </div>  
+          <div class="project">
+            <h4>Less Cool App</h4>
+            <p>Et harum quidem rerum facilis est et expedita distinctio. 
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+          </div>
+          <div class="project">
+            <h4>New App</h4>
+            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. 
+                Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+          </div>
+        </div>
+    </div>
+ </div>
+</body>
+
+<script>
+    const menu = document.querySelectorAll('li');
+    for (let i =0; i < menu.length; i++){
+        const link = menu[i];
+        link.addEventListener('click', ()=>{
+         if(document.querySelectorAll('.active').length != 0){
+         document.getElementsByClassName('active')[0].classList.remove('active');
+    }
+          link.classList.add('active');
+        })
+    }
+</script>
+</html>

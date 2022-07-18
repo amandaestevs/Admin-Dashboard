@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+   width: 100%;
+   background-color: #0284c7;
+   grid-column: 1 / 2;
+   grid-row: span 2;
+   position: relative;
+}
+
+.header {
+   background-color: #e0f2fe;
+   width: 100%;
+   height: auto;
+   grid-column: 2 / -1;
+   padding-bottom: 8px;
+}
+
+.main-content {
+   background-color: #f0f9ff;
+   width: 100%;
+   height: auto;
+   grid-column: 2 / -1;
+}
+
+/* main content */
+
+.content-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    grid-template-rows: repeat(10, 1fr);
+    row-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.content-container > div {
+    width: 93%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.project {
+    grid-row: span 3;
+    background: linear-gradient(to right, gold 10px, white 0);
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.project h4, .project p {
+   margin-left: 12px;
+}
+
+.annoucements, .trending {
+    grid-row: span 4;
+    padding: 10px;
+}
+
+.project-title {
+   grid-row: 1 / 1;
+}
+
+.annoucement-title {
+    grid-row: 1 / 1;
+    grid-column: 3 / 4;
+}
+
+.trending-title {
+    grid-row: 6 / 7 ;
+    grid-column: 3 / 4 ;
+}
+
+.project-title, .annoucement-title, .trending-title {
+    margin-top: 20px;
+}
+
+.annoucements h4, .annoucements p {
+    margin-left: 12px;
+    padding: 5px;
+}
+
+.annoucements p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.annoucements p:last-of-type {
+    border-bottom: none;
+}
+
+.second-pjc { 
+    grid-row: 2 / 5;
+    grid-column: 2 / 3;
+}
+
+.trending {
+    grid-column: 3 / 4;
+}
+
+.trending h4, .trending p {
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.trending p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* sidebar content */
+.myLogo {
+    position: absolute;
+    top: 2%;
+    left: 6%;
+    color: white;
+    font-size: 35px;
+}
+
+nav {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ul { 
+    display: grid;
+    row-gap: 10px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+/* header content */
+
+.header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.search-bar {
+  margin-left: 40px;
+  margin-top: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+    width: 80%;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.search-pic {
+    width: 3%;
+    height: 3%;
+    margin-right: 15px;
+}
+
+.side-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.profile-pic {
+    width: 5%;
+    border-radius: 60%;
+}
+
+.notification {
+    width: 20%; 
+    height: 22%;
+    cursor: pointer;
+}
+
+.main-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    margin-left: 40px;
+}
+
+.buttons > button {
+    color: white;
+    background-color: #0284c7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    width: 25%;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+
